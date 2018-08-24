@@ -6,7 +6,6 @@ import (
 )
 
 func LevenshteinDistance(t1,t2 string) int {
-
 	if t1 == t2{
 		return 0
 	}
@@ -51,10 +50,12 @@ func LevenshteinDistance(t1,t2 string) int {
 
 func Min(is ...int) int {
 	min := int(math.MaxInt64)
+
 	for _, v := range is {
 		if min > v {
 			min = v
 		}
 	}
+
 	return min
 }
